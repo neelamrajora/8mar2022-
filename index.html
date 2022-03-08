@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css position</title>
+        <style>
+            #p{
+                width:600px;
+                height:600px;
+                background: red;
+                margin:auto;         
+            }
+            #p:hover{
+                background:#fff;
+            }
+            .common{
+                width:300px;
+                height:300px;
+                position:absolute;
+            }
+            .blue{
+                background:blue;
+                border-bottom-left-radius:300px;
+                border-top-right-radius:300px;
+                bottom:30px;
+                right:372px;
+            }
+            #p:hover .blue{
+                background:purple;
+            }
+            .green{
+                background:green;
+                border-top-left-radius:300px;
+                border-bottom-right-radius:300px;
+                bottom:30px;
+            }
+            #p:hover .green{
+                background:yellow;
+            }
+            .yellow{
+                background:yellow;
+                border-bottom-right-radius:300px;
+                border-top-left-radius:300px;
+                right:372px;
+            }
+            #p:hover .yellow{
+                background:green;
+            }
+            .levender{
+                background:purple;
+                border-bottom-left-radius:300px;
+                border-top-right-radius:300px;
+           }
+           #p:hover .levender{
+               background:blue;
+           }
+            
+
+            
+        </style>
+    </head>
+    <body>
+        <div id="p">
+            <div class="common blue c1"></div>
+            <div class="common green c2"></div>
+            <div class="common yellow c3"></div>
+            <div class="common c3 levender"></div>
+        </div>
+    </body>
+</html>
